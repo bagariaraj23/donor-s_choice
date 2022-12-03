@@ -7,7 +7,14 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg bg-light py-4">
         <div className="container-fluid">
           <span className="navbar-brand mb-0 h1 mx-5" role="button">
-            Donor's Choice
+            <Link
+              className="nav-link active mx-3"
+              role="button"
+              aria-current="page"
+              to="/"
+            >
+              Donor's Choice
+            </Link>
           </span>
           <button
             className="navbar-toggler"
@@ -27,7 +34,7 @@ export default function Navbar() {
                   className="nav-link active mx-3"
                   role="button"
                   aria-current="page"
-                  to="/body"
+                  to="/"
                 >
                   Home
                 </Link>
@@ -69,7 +76,14 @@ export default function Navbar() {
           </div>
           <form className="d-flex mr-auto mx-5" role="contact">
             <button class="btn btn-outline-danger" type="submit">
-              Get in Touch ASAP!
+              <Link
+                className="nav-link active mx-3"
+                role="button"
+                aria-current="page"
+                to="/contact"
+              >
+                Get in Touch ASAP!
+              </Link>
             </button>
           </form>
         </div>
